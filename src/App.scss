@@ -1,117 +1,117 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.App {
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-.dropdown_container {
-  position: sticky;
-  min-height: 200vh;
-  border-right: 1px solid black;
-  min-width: 200px;
-}
-.main_container {
-  border: 1px solid red;
-  flex: 1;
-}
-.dropdown_box {
-  border: 1px solid blue;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-.dropdown_item {
-  display: flex;
-  flex-direction: column;
-  // transition: 1s ease max-height;
-
-  > li {
-    color: blue;
-    z-index: 100;
-    background-color: gray;
-    > ul {
-      z-index: -1;
-    }
-  }
-  .dropdown_ul {
-    max-height: 0;
-    overflow: hidden;
-    // visibility: hidden;
-    transition: 0.4s ease-in-out max-height;
-  }
-}
-.dropdown_item_active {
-  // transition: 1s ease max-height;
-  > li {
-    color: red;
-    z-index: 100;
-
-    > ul {
-      z-index: -1;
-    }
-  }
-  .dropdown_ul {
-    // max-height: 100px;
-    // transition: 0.4s ease-in-out max-height;
-    li {
-      // visibility: visible;
-
-      // opacity: 1;
-      // transition: 0.2s ease-in-out opacity;
-      // transition-delay: 0.1s;
-      // height: 25px;
-    }
-  }
-}
-.main_side {
-  display: block;
-  border: 1px solid blue;
-  height: fit-content;
-  width: 200px;
-  position: sticky;
-  top: 0;
-}
-//SIDEBAR STYLE
-.sidebar_container {
-  border: 3px solid green;
-}
-.sidebar_box {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid blue;
-}
-.sidebar_single_item {
-  border-bottom: 1px solid pink;
-  background-color: bisque;
-}
-// .sidebar_single_children {
-//   height: 0;
-//   max-height: 0;
-//   opacity: 0;
-//   transition: 0.3s ease max-height;
+// * {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
 // }
-.content {
-  // background-color: black;
-  // height: 0;
-  // min-height: 0px;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(1, 0, 1, 0);
-}
-.content.open {
-  height: auto;
-  max-height: 999px;
-  transition: all 0.3s cubic-bezier(1, 0, 1, 0);
-}
-// .open {
+// .App {
+//   display: flex;
+//   width: 100%;
+//   position: relative;
+// }
+// .dropdown_container {
+//   position: sticky;
+//   min-height: 200vh;
+//   border-right: 1px solid black;
+//   min-width: 200px;
+// }
+// .main_container {
+//   border: 1px solid red;
+//   flex: 1;
+// }
+// .dropdown_box {
+//   border: 1px solid blue;
+//   padding: 1rem 0;
+//   display: flex;
+//   flex-direction: column;
+//   background-color: white;
+// }
+// .dropdown_item {
+//   display: flex;
+//   flex-direction: column;
+//   // transition: 1s ease max-height;
+
+//   > li {
+//     color: blue;
+//     z-index: 100;
+//     background-color: gray;
+//     > ul {
+//       z-index: -1;
+//     }
+//   }
+//   .dropdown_ul {
+//     max-height: 0;
+//     overflow: hidden;
+//     // visibility: hidden;
+//     transition: 0.4s ease-in-out max-height;
+//   }
+// }
+// .dropdown_item_active {
+//   // transition: 1s ease max-height;
+//   > li {
+//     color: red;
+//     z-index: 100;
+
+//     > ul {
+//       z-index: -1;
+//     }
+//   }
+//   .dropdown_ul {
+//     // max-height: 100px;
+//     // transition: 0.4s ease-in-out max-height;
+//     li {
+//       // visibility: visible;
+
+//       // opacity: 1;
+//       // transition: 0.2s ease-in-out opacity;
+//       // transition-delay: 0.1s;
+//       // height: 25px;
+//     }
+//   }
+// }
+// .main_side {
+//   display: block;
+//   border: 1px solid blue;
+//   height: fit-content;
+//   width: 200px;
+//   position: sticky;
+//   top: 0;
+// }
+// //SIDEBAR STYLE
+// .sidebar_container {
+//   border: 3px solid green;
+// }
+// .sidebar_box {
+//   display: flex;
+//   flex-direction: column;
+//   border: 2px solid blue;
+// }
+// .sidebar_single_item {
+//   border-bottom: 1px solid pink;
+//   background-color: bisque;
+// }
+// // .sidebar_single_children {
+// //   height: 0;
+// //   max-height: 0;
+// //   opacity: 0;
+// //   transition: 0.3s ease max-height;
+// // }
+// .content {
 //   // background-color: black;
+//   // height: 0;
+//   // min-height: 0px;
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: all 0.3s cubic-bezier(1, 0, 1, 0);
+// }
+// .content.open {
 //   height: auto;
 //   max-height: 999px;
-//   opacity: 1;
-//   transition: 0.3s ease all;
+//   transition: all 0.3s cubic-bezier(1, 0, 1, 0);
 // }
+// // .open {
+// //   // background-color: black;
+// //   height: auto;
+// //   max-height: 999px;
+// //   opacity: 1;
+// //   transition: 0.3s ease all;
+// // }
